@@ -18,7 +18,7 @@ from django.urls import reverse
 def index(request):
     context = {'segment': 'index'}
 
-    html_template = loader.get_template('ITSAC_WEB/index.html')
+    html_template = loader.get_template('ITSAC_WEB/home/dashboard.html')
     return HttpResponse(html_template.render(context, request))
 
 def pages(request):
